@@ -4,7 +4,7 @@ email: thrabchak@gmail.com
 description: >
   Tom Hrabchak's small personal website. Find links to projects and contact 
   information here.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "thrabchak.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: thrabchak
 github_username:  thrabchak
