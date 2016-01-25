@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
   <body>
+    <div class="container-fluid">
+      <header class="row">
+        <div class="homepage-colorbar"></div>
+        <h1 class="text-center">{{site.title}}</h1>
 
-    {% include homepage-title.html %}
-    
-    {% include homepage-card.html %}
-    
-    {% include homepage-nav.html %}
+        <div class="row">
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+      </header>
 
-    <div class="page-content">
-      <div class="wrapper">
+      <nav class="row">
+        <hr>
+        <div class="trigger text-center">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </nav>
+
+      <div class="row page-content text-center">
         {{ content }}
       </div>
     </div>
