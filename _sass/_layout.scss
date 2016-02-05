@@ -1,14 +1,30 @@
+* {
+}
+
 /**
  * Homepage
  */
 .my-title-bar {
-  margin-top: 15;
-  margin-bottom: 15;
-  border-color: aqua;
-  border-width: 3px;
-  padding: 15;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+.name-title {
+  font-size: 45px;
+}
+.bio-descriptions { 
+  //border: 1px solid red !important;
+}
+.info-card {
+}
+.home-mid-nav {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
+.half-rule {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 /**
  * Site header
  */

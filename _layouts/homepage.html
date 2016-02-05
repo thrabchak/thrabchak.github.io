@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
-
   <body>
-    <div class="container">
-      <div class="my-title-bar">
+    <div class="my-title-bar">
+      <div class="container">
         <div class="homepage-colorbar"></div>
-        <div class="name-title">
-          <h1 class="text-center">{{site.title}}</h1>
+        <h1 class="name-title text-center">{{site.title}}</h1>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="container">
+        <div class="bio-descriptions col-sm-8">{{content}}</div>
+        <div class="bio-images col-sm-4 ">
+          <img class="img-responsive img-circle center-block" src="http://placehold.it/150x150">
+<!--
+          <h5 class="text-center">Contact</h5>
+          <div class="center-block">
+            <div class="col-sm-4">
+              <img src="http://placehold.it/20x20">
+            </div>
+            <img class="col-sm-4" src="http://placehold.it/20x20">
+            <img class="col-sm-4" src="http://placehold.it/20x20">
+          </div>          
+-->
         </div>
       </div>
-      <div class="info-card row">
-        <div class="bio-descriptions col-xs-8">{{content}}</div>
-        <div class="col-xs-4">
-          <img class="img-responsive" src="http://placehold.it/200x200">
+    </div>
+    <nav class="home-mid-nav">
+      <div class="container">
+        <div class="row">
+          <hr class="half-rule">
+          <div class="trigger text-center">
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <hr class="half-rule">
         </div>
       </div>
-
-      <nav class="navigation row">
-        <hr>
-        <div class="trigger text-center">
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
-
-      <div class="page-content row text-center">
+    </nav>
+    <div class="page-content">
+      <div class="container">
         <div class="home">
-
           <h1 class="page-heading">Recent</h1>
-
           <ul class="post-list">
             {% for post in site.posts %}
               <li>
                 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
               </li>
             {% endfor %}
           </ul>
-
           <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
         </div>
       </div>
     </div>
-
   </body>
-
 </html>
