@@ -2,11 +2,9 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    <div class="top-bar"></div>
     <div class="my-title-bar">
-      <div class="container">
-        <div class="homepage-colorbar"></div>
-        <h1 class="name-title text-center">{{site.title}}</h1>
-      </div>
+      <h1 class="name-title text-center">{{site.title}}</h1>
     </div>
     <div class="info-card">
       <div class="container">
@@ -18,17 +16,15 @@
     </div>
     <nav class="home-mid-nav">
       <div class="container">
-        <div class="row">
-          <hr class="half-rule">
-          <div class="trigger text-center">
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-              {% endif %}
-            {% endfor %}
-          </div>
-          <hr class="half-rule">
+        <hr class="half-rule">
+        <div class="trigger text-center">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
         </div>
+        <hr class="half-rule">
       </div>
     </nav>
     <div class="page-content">
@@ -49,5 +45,6 @@
         </div>
       </div>
     </div>
+    {% include footer.html %}
   </body>
 </html>

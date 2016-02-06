@@ -4,34 +4,33 @@
 /**
  * Homepage
  */
-.my-title-bar {
-  padding-top: 5vh;
-  margin-bottom: 4vh;
-  
+.top-bar {  
   border-top: 3px solid $grey-color-dark;
+  padding: $home-elem-space;  
+}
+.my-title-bar {
+  padding: $home-elem-space;  
 }
 .name-title {
   font-size: 45px;
 }
 .bio-descriptions {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  padding: $inter-col-space;
 }
 .bio-images {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  padding: $inter-col-space;
 }
 .info-card {
+  padding: $home-elem-space;  
 }
 .home-mid-nav {
-  margin-top: 1vh;
-  margin-bottom: 2vh;
+  padding: $home-elem-space;  
+}
+.half-rule {
+  margin-top: $hr-margin;
+  margin-bottom: $hr-margin;
 }
 
-.half-rule {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 /**
  * Site header
  */
