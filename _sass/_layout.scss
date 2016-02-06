@@ -5,20 +5,27 @@
  * Homepage
  */
 .my-title-bar {
-  margin-top: 7vh;
-  margin-bottom: 7vh;
+  padding-top: 5vh;
+  margin-bottom: 4vh;
+  
+  border-top: 3px solid $grey-color-dark;
 }
 .name-title {
   font-size: 45px;
 }
-.bio-descriptions { 
-  //border: 1px solid red !important;
+.bio-descriptions {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.bio-images {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 .info-card {
 }
 .home-mid-nav {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
 }
 
 .half-rule {
@@ -29,7 +36,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 3px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
