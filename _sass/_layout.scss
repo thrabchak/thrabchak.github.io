@@ -20,8 +20,19 @@
 .bio-images {
   padding: $inter-col-space;
 }
+.bio-contact {
+  float: left;
+  padding: $inter-col-space;
+  
+  width: 50%;
+}
 .info-card {
   padding: $home-elem-space;  
+}
+.info-line {
+  padding: $inter-col-space;
+  float: left;
+  width: 50%;
 }
 .home-mid-nav {
   padding: $home-elem-space;  

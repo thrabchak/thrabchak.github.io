@@ -6,8 +6,9 @@ description: >
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-twitter_username: thrabchak
-github_username:  thrabchak
+facebook_username: thrabchak
+twitter_username:  thrabchak
+github_username:   thrabchak
 timezone: EST
 
 # Build settings

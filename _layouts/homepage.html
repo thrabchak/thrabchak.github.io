@@ -8,10 +8,34 @@
     </div>
     <div class="info-card">
       <div class="container">
-        <div class="bio-images col-sm-4 col-sm-push-8">
-          <img class="img-responsive img-circle center-block" src="/data/images/portrait-150x150.png">
+        
+        <div class="row">
+          <div class="bio-images col-sm-4 col-sm-push-8">
+            <img class="img-responsive img-circle center-block" src="/data/images/portrait-150x150.png">
+          </div>
+          <div class="bio-descriptions col-sm-8 col-sm-pull-4">{{content}}</div>       
         </div>
-        <div class="bio-descriptions col-sm-8 col-sm-pull-4">{{content}}</div>
+        
+        <div class="row">
+          <div class="bio-contact xs-sm-6">
+            <div class="text-uppercase text-right"><b>Contact</b></div>
+          </div>
+          <div class="bio-contact xs-sm-6">
+              {% include icon-email.html %}
+              {% include icon-facebook.html %}
+              {% include icon-github.html %}
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="bio-contact xs-sm-6">
+            <div class="text-uppercase text-right"><b>Location</b></div>
+          </div>
+          <div class="bio-contact xs-sm-6">
+              Boston, MA
+          </div>
+        </div>
+        
       </div>
     </div>
     <nav class="home-mid-nav">
