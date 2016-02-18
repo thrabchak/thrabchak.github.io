@@ -207,36 +207,40 @@
     }
 }
 
-
+.recent-section-title{
+  padding: $home-elem-space;
+}
 
 /**
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $inter-col-space;
 }
-
 .page-heading {
-    font-size: 20px;
+    font-size: 25px;
 }
-
 .post-list {
     margin-left: 0;
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $inter-col-space;
     }
 }
-
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
-
 .post-link {
     display: block;
     font-size: 24px;
+}
+.post-title-bar{
+  padding: $inter-col-space;
+}
+.post-content{
+  padding: $inter-col-space;
 }
 
 
@@ -284,4 +288,34 @@
             font-size: 18px;
         }
     }
+}
+
+/*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
 }
