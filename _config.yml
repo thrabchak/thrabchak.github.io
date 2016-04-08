@@ -1,13 +1,11 @@
 # Site settings
 title: Tom Hrabchak
 email: thrabchak@gmail.com
-description: >
-  This is my small personal website.
+description: ""
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
 facebook_username: thrabchak
-twitter_username:  thrabchak
 github_username:   thrabchak
 timezone: EST
 
