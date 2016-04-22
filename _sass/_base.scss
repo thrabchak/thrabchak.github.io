@@ -204,3 +204,8 @@ pre {
         }
     }
 }
+
+.icon:hover path { 
+    fill: $grey-color-dark; 
+    text-decoration: none;
+}
