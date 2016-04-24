@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Book Review: In The Plex"
-date:   2016-01-19 08:30:28 -0500
 ---
 I read Steven Levy's [*In The Plex: How Google Thinks, Works, and Shapes Our Lives*](http://www.amazon.com/In-The-Plex-Google-Thinks/dp/1416596585) and enjoyed it so much that I wrote a book review. Levy presents a mostly flattering narrative of Google's history, meanwhile drawing conjectures on why Google succeeded in the majority of their endeavours along the way.
 
